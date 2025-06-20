@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #fdfdfd;
+  color: #222;
+  line-height: 1.6;
+  padding: 2rem;
+  margin: 0;
+}
+
+/* Global Headers */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+  border-bottom: 3px solid #0d6efd;
+  padding-bottom: 0.3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  color: #0d6efd;
+  border-left: 4px solid #0d6efd;
+  padding-left: 0.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  max-width: 800px;
+}
+
+
+/* List Styling */
+ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation bar styling */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #0d6efd;
+  padding: 1rem;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav a.active {
+  background-color: white;
+  color: #0d6efd;
+}
