@@ -1,12 +1,65 @@
 <h1>Projects</h1>
-<p>I've created a variety of projects bot independently and through my school.</p>
 
-<section id="hospital-tracker" class="school-project">
-    <h2>Hospital Equipment Tracker</h2>
+<section id="school-projects" class="grouping">
+    <h2>School Projects (Not Including Publications)</h2>
+    <section id="hospital-tracker" class="school-project">
+        <h3>Hospital Equipment Tracker</h3>
+        <p>
+            In my software engineering course at WPI, I joined a team of 8 other students to make an application that could catalogue and track hospital equipment. The front end 
+            was developed primarily in Java and JavaFX, and the back end relied on a combination of SQL and AWS. I was primarily a front end developer on this project. We simulated 
+            transferring the equipment aorund the building and between floors, it's status, time since last maintenance, and who had interacted with it last. We also implemented 
+            an A* pathfinding algorithm to give employees the most effective route from point A to point B, without interfering with areas congested at the time by equipment or 
+            "standard" congestion of personnel and patients.
+        </p>
+    </section>
+    <section id="blueberry-ml" class="school-project">
+        <h3>Blueberry Yield Machine Learning</h3>
+        <p>
+            The final project in my machine learning course was to develop an AI that could predict the yield of blueberry plants based on a variety of factors. We used Python 
+            to create a 4-layer neural network that we fed input data to. After refining our hyperparameters and narrowing down our margin of error we had developed a model that 
+            could reliably predict the yield of blueberry plants with over 90% accuracy.
+        </p>
+    </section>
+    <section id="qr-code" class="school-project">
+        <h3>QR Code Encoder and Decoder</h3>
+        <p>
+            One of the projects in my computer networks course was to create a program in C++ that could read QR codes and decode them. After feeding the data into the program, 
+            it would respond with the correct output of a link or text or whatever data was contained inside the code. I took it a step further and added the ability for the program to also 
+            ENCODE data into a QR code, producing an image which the user could download or scan to redistribute where they needed.
+        </p>
+    </section>
 </section>
-<section id="blueberry-ml" class="school-project">
-    <h2>Blueberry Yield Machine Learning</h2>
-</section>
-<section id="lidar-ml" class="ind-project">
-    <h2>AI Lidar Analysis</h2>
+
+<section id="ind-projects" class="grouping">
+    <h2>Independent Projects</h2>
+    <section id="cultural-diffusion" class="ind-project">
+        <h3>Cultural Diffusion Simulator</h3>
+        <p>
+            Using Python, I built an app that can simulate cultural diffusion over several hundred nodes efficiently. After doing some research, I decided to base my approach on a graph of nodes and edges 
+            and allow each node to be influenced by it's neighbors. On generation, every node is assigned a random hex color, influence value, and stubborness value. Over time, random events will occur to 
+            reduce deterministic outcomes. The simulation plays out over a user-specified number of iterations. I also added several different methods for graph generation to observe what impact different 
+            random connected graph layouts would have on diffusion.
+        </p>
+    </section>
+    <section id="search-visual" class="ind-project">
+        <h3>Visualizing Search Algorithms</h3>
+        <p>
+            As a precursor / warmup for the cultural diffusion simulator I created a visualizer for different graph searching algorithms and began visualizing different pathfinding algorithms as well. 
+            Breadth First Search and Depth First Search are both visually displayed at the prompting of the user. There is also the option to see a visualization of Djikstra's algorithm, with user provided 
+            start and end nodes. By using a combination of pygame and networkx I was able to achieve some solid visual demonstrations on small graphs.
+        </p>
+    </section>
+    <section id="tnkelvin" class="ind-project">
+        <h3>AI Character Chatbot</h3>
+        <p>
+            I took an existing framework for openAI chatbots made by content creator DougDoug, and optimized it for the specific use case of a discord bot that could interact with my friends online. I utilized 
+            openAI's API for chatgpt, microsoft Azure TTS, and ElevenLabs voice API to create a bot that could remember conversations and continue them after time had passed. 
+        </p>
+    </section>
+    <section id="snake" class="ind-project">
+        <h3>Snake in Python</h3>
+        <p>
+            This one's really simple, to practice using Python's pygame library I just rebuilt snake. Not a lot to say here, it's snake. Fun to play though!
+        </p>
+    </section>
 </section>

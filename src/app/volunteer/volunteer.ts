@@ -7,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './volunteer.css'
 })
 export class Volunteer {
+  lightboxActive = false;
+  lightboxImage = '';
 
+  openLightbox(imageUrl: string) {
+    this.lightboxImage = imageUrl;
+    this.lightboxActive = true;
+  }
+
+  closeLightbox() {
+    this.lightboxActive = false;
+    this.lightboxImage = '';
+  }
 }

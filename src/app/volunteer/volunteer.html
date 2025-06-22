@@ -1,1 +1,43 @@
-<p>volunteer works!</p>
+<h1>My Volunteering</h1>
+<h2>Worldpackers</h2>
+<p>
+    I currently spend my days volunteering abroad through Worldpackers. I've helped build sustainable homes, maintain permaculture gardens, 
+    and promote centers of cultural immersion. I believe it's the responsibility of every individual to provide for themselves and those who depend on them, 
+    and to use at least SOME of their extra resources to help others. 
+</p>
+<section id="souche-section" class="volunteer">
+    <h3>La Souche, FR</h3>
+    <div id="souche" class="location">
+    <img src="assets/personal/souche-cement.jpg" alt="Cement" (click)="openLightbox('assets/personal/souche-cement.jpg')">
+    <img src="assets/personal/souche-dish-clean.jpg" alt="Dishes" (click)="openLightbox('assets/personal/souche-dish-clean.jpg')">
+    <img src="assets/personal/souche-straw.jpg" alt="Straw" (click)="openLightbox('assets/personal/souche-straw.jpg')">
+    <img src="assets/personal/souche-creek.jpg" alt="Creek" (click)="openLightbox('assets/personal/souche-creek.jpg')">
+    </div>
+    <p>
+        I spent 10 days in La Souche, France, helping create the walls of a sustainable home. We used a French Canadian construction technique to build a majority 
+        of the insulation out of straw, with ecologically friendly concrete poured in for stability. I'd never worked construction, but it was fun to learn!
+    </p>
+</section>
+<section id="ariege-section" class="volunteer">
+    <h3>St. Martin d'Oydes, FR</h3>
+    <div id="ariege" class = "location">
+        <img src="assets/personal/ariege-wood-lift-1.jpg" alt="Wood" (click)="openLightbox('assets/personal/ariege-wood-lift-1.jpg')">
+        <img src="assets/personal/ariege-dog.jpg" alt="Tyka" (click)="openLightbox('assets/personal/ariege-dog.jpg')">
+    </div>
+    <p>
+        After La Souche, I spent 18 days in the middle of nowhere in a region of France called Ariege. I helped a family with their English, their dog,
+        winter stockpiles of wood and food, gardening, and more. I picked up a lot of French at this farm, and I really miss it!
+    </p>
+</section>
+<h2>Independent</h2>
+<p>
+    While working in Albany, I took up a position as a volunteer English tutor at the local refugee center. It was rewarding to see people from around the world 
+    become receptive to the way I taught and begin to understand how to integrate into an American lifestyle. I loved working with my regulars, because even though we 
+    could hardly communicate, we still found ways to make each other laugh.
+</p>
+<h2>Senior Honor Society (TSOA)</h2>
+
+
+<div class="lightbox" [class.active]="lightboxActive" (click)="closeLightbox()">
+  <img [src]="lightboxImage" alt="Enlarged Image" (click)="$event.stopPropagation()" />
+</div>

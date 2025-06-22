@@ -5,7 +5,7 @@ body {
   background-color: #fdfdfd;
   color: #222;
   line-height: 1.6;
-  padding: 2rem;
+  padding: 0;
   margin: 0;
 }
 
@@ -25,11 +25,13 @@ h2 {
   color: #0d6efd;
   border-left: 4px solid #0d6efd;
   padding-left: 0.5rem;
+  margin-left: 1rem;
 }
 
 h3 {
   font-size: 1.25rem;
   margin-top: 1.5rem;
+  margin-left: 1rem;
   color: #333;
 }
 
@@ -37,7 +39,15 @@ h3 {
 p {
   font-size: 1rem;
   margin-bottom: 1rem;
-  max-width: 800px;
+  margin-left: 1rem;
+  max-width: 90%;
+}
+
+a {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  max-width: 90%;
 }
 
 
@@ -79,4 +89,29 @@ nav a:hover {
 nav a.active {
   background-color: white;
   color: #0d6efd;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
 }
