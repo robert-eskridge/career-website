@@ -6,8 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
-  },
+    "test": "ng test",
+    "deploy": "ng build --base-href https://robert-eskridge.github.io/career-website/ && npx angular-cli-ghpages --dir=dist/career-website"
+},
   "private": true,
   "dependencies": {
     "@angular/common": "^20.0.0",
